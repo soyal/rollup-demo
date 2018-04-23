@@ -16,11 +16,11 @@ export default [
         extensions: ['less'],
         plugins: [require('postcss-cssnext'), require('postcss-flexbugs-fixes')]
       }),
+
       babel({
         exclude: 'node_modules/**'
       }),
-      // defaults to .svg, .png, .jpg and .gif files
-      // defaults to true
+
       url({
         limit: 5 * 1024,
         include: ['**/*.png'], // defaults to .svg, .png, .jpg and .gif files
